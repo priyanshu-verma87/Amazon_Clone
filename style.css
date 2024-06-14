@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     font-family: Arial;
     border: border-box;
 }
@@ -19,7 +20,7 @@
 
 }
 .logo{
-    background-image: url("amazon_logo.png");
+    background-image: url("images/amazon_logo.png");
     background-size: cover;
     height: 50px;
     width: 100%;
@@ -91,6 +92,7 @@
     border-top-right-radius: 3.5px;
     border-bottom-right-radius: 3.5px;
     color: #0f1111;
+    cursor: pointer;
 }
 
 /** box4 **/
@@ -145,7 +147,7 @@ span{
 /** hero section **/
 
 .hero-section{
-    background-image: url("hero_image.jpg");
+    background-image: url("images/hero_image.jpg");
     background-size: cover;
     height: 500px;
     display: flex;
@@ -170,7 +172,8 @@ span{
 }
 
 .hero-msg a:hover{
-    border-bottom: 1px solid #007185;
+    border-bottom: 1px solid rgb(247, 98, 5);
+    color: rgb(247, 98, 5);
 }
 
 /** shop section **/
@@ -204,6 +207,7 @@ span{
 
 .box-content p{
     color: #007185;
+    cursor: pointer;
 }
 
 /** footer **/
@@ -260,7 +264,7 @@ ul a:hover{
 }
 
 .logo{
-    background-image: url("amazon_logo.png");
+    background-image: url("images/amazon_logo.png");
     background-size: cover;
     height: 50px;
     width: 100px;
@@ -280,4 +284,22 @@ ul a:hover{
 
 .copyright{
     padding-top: 5px;
+}
+
+/*------------------------------- Media queries----------------------------------- */
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(188, 206, 251);
+}
+
+@media (max-width: 668px) {
+    .shop-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 90%;
+    }
 }
